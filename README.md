@@ -12,9 +12,11 @@ to calculate the result.
 * Binary operators supported are as follows: +, -, *, /, (, )
 
 ## BNF Grammar
-expr: term((PLUS|MINUS)term)*
-term: factor((MUL/DIV)factor)*
-factor: INTEGER | LPAREN expr RPAREN
+Non-terminal  | Terminal & Non-terminal
+------------- | -------------
+expr: | term((PLUS \| MINUS)term)*
+term: | factor((MUL/DIV)factor)*
+factor: | INTEGER \| LPAREN expr RPAREN
 
 ##TOKEN Types
 * PLUS (+)
