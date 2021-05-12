@@ -1,0 +1,16 @@
+Create an additional non-terminal factor for basic units of expression, in our case, integers.
+The general rule is that if you have N levels of precedence, you will need N + 1 non-terminals in total:
+one non-terminal for each level plus one non-terminal for basic units of expression.
+
+R, defined in the grammar, becomes a method with the same name, and references to that rule become a method call: R().
+
+supported operators - + - * /
+expr: term((PLUS|MINUS)term)*
+term: factor((MUL/DIV)factor)*
+factor: INTEGER
+
+supported operators - + - * / ( )
+expr: term((PLUS|MINUS)term)*
+term: factor((MUL/DIV)factor)*
+factor: INTEGER | LPAREN expr RPAREN
+

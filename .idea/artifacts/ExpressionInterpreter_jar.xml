@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="ExpressionInterpreter:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/ExpressionInterpreter_jar</output-path>
+    <root id="archive" name="ExpressionInterpreter.jar">
+      <element id="module-output" name="ExpressionInterpreter" />
+    </root>
+  </artifact>
+</component>
