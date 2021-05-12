@@ -1,5 +1,7 @@
 # Expression Interpreter
-* The interpreter takes in a parser as input. The parser takes in a lexer as input. 
+* The interpreter takes in a parser as input. 
+  
+* The parser takes in a lexer as input. 
 * The lexer takes in an expression as input. 
   
 * Abstract syntax tree is used for
