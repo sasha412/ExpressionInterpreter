@@ -10,4 +10,20 @@ to calculate the result.
 
 * Tokens are the building blocks. 
 * Binary operators supported are as follows: +, -, *, /, (, )
+
+## BNF Grammar
+expr: term((PLUS|MINUS)term)*
+term: factor((MUL/DIV)factor)*
+factor: INTEGER | LPAREN expr RPAREN
+
+##TOKEN Types
+* PLUS (+)
+* MINUS (-)
+* MUL (*)
+* DIV (/)
+* INTEGER
+* LPAREN ('(')
+* RPAREN (')')
+
+
  
